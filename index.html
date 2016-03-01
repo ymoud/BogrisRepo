@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Bare - Start Bootstrap Template</title>
+
+    <!-- Bootstrap Core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+	<link rel="stylesheet" href="css\font-awesome-4.5.0\css\font-awesome.min.css">
+	<link href="css/style.css" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <style>
+    body {
+        padding-top: 70px;
+        /* Required padding for .navbar-fixed-top. Remove if using .navbar-static-top. Change if height of navigation changes. */
+    }
+    </style>
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+</head>
+
+<body>
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+        <div class="container">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="index.html"><i class="fa fa-university"></i> Home</a>
+            </div>
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav">
+                    <li>
+                        <a href="cv.html"><i class="fa fa-user"></i> CV</a>
+                    </li>
+                    <li>
+                        <a href="teaching.html"><i class="fa fa-graduation-cap"></i> Teaching</a>
+                    </li>
+					  <li class="dropdown research">
+						<a class="dropdown-toggle" data-toggle="dropdown" href="#"><i class="fa fa-book"></i> Research
+						<span class="caret"></span></a>
+						<ul class="dropdown-menu">
+						  <li><a href="publications.html">Publications</a></li>
+						  <li><a href="projects.html">Projects</a></li>
+						</ul>
+					  </li>
+					<li>
+                        <a href="useful-links.html">Useful Links</a>
+                    </li>
+                </ul>
+            </div>
+            <!-- /.navbar-collapse -->
+        </div>
+        <!-- /.container -->
+    </nav>
+
+    <!-- Page Content -->
+    <div class="container my-container">
+		<div class="row">
+			<!-- PROFILE PICTURE START -->
+			<div class="col-md-4 hidden-xs hidden-sm">
+				<div class="profile-picture">
+					<img src="img/bogris.jpg" alt="profile picture" class="img-responsive">
+					<h4 class="title">Creative Developer</h4>
+				</div>
+			</div>
+			<!-- //PROFILE PICTURE END -->
+
+			<div class="col-md-8 match-height">
+
+				<!-- PROFILE TEXT START -->
+				<div class="profile-text padding-left-yes">
+					<div class="row">
+						<div class="col-md-12">
+							<h2 class="section-title">Hello, My Name is Bogris.</h2>
+
+							<p>
+								Adonis Bogris is an associate professor at the Department of Informatics at the Technological Educational Insitute of Athens.
+							</p>
+
+							<span class="divider"></span>
+
+							<p class="text-grey animated bounceInUp" style="opacity: 1;">
+								Here you will find information on my research activities, the courses I teach and interesting links relating to the research groups I work with.
+							</p>
+
+							<p class="text-grey animated bounceInUp" style="opacity: 1;">
+								Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.
+							</p>
+						</div>
+						<!-- //.col-md-12 -->
+					</div>
+					<!-- //.row -->
+				</div>
+				<!-- //PROFILE TEXT END -->
+
+				<!-- CONTACT DETAILS START -->
+				<div class="contact-details padding-left-yes">
+					<div class="row">
+						<div class="col-sm-6 col-md-5">
+							<h4 class="contact-details">Contact Details</h4>
+
+							<ul class="list-unstyled text-grey contact-details">
+								<li>Adonis Bogris</li>
+								<li>Department of Informatics, Technological Educational Institute of Athens, Aghiou Spiridonos, Egaleo, Greece GR12243.</li>
+								<li>+30-2105385822</li>
+								<li>abogris@teiath.gr</li>
+								<li>http://users.teiath.gr/abogris/</li>
+							</ul>
+						</div>
+						<!-- //.col-md-5 -->
+						<div class="col-md-7 cold-sm-6">
+							<div id="map" style="height:239px; width:100%;"></div>
+						</div>
+					</div>
+					<!-- //.row -->
+				</div>
+				<!-- //CONTACT DETAILS END -->
+
+			</div>
+			<!-- //.col-md-8 -->
+		</div>
+		<!-- //.row -->
+    </div>
+    <!-- /.container -->
+
+    <!-- jQuery Version 1.11.1 -->
+    <script src="js/jquery.js"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="js/bootstrap.min.js"></script>
+	
+	 <!-- Bootstrap Core JavaScript -->
+    <script src="js/hover.js"></script>
+
+<script src="https://maps.googleapis.com/maps/api/js?callback=initMap"
+        async defer></script>
+		 
+	<script>
+		function initMap() {
+			var mapDiv = document.getElementById('map');
+			var map = new google.maps.Map(mapDiv, {
+			center: {lat: 38.0026081, lng: 23.6758854},
+			zoom: 16
+			});
+			var marker = new google.maps.Marker({
+  position: {lat: 38.0026081, lng: 23.6758854},
+  map: map
+});
+		}
+	</script>
+
+
+</body>
+
+</html>

@@ -1,0 +1,59 @@
+body {
+	background-color: #F5F5F5;
+	font-family: 'Lato', sans-serif;
+    font-size: 16px;
+    line-height: 25px;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    margin: 0;
+    font-family: 'Raleway', sans-serif;
+}
+
+.my-container {
+	margin-top:75px;
+}
+
+/*---------------------------------------------------------------------*/
+/*  2.2. DIVIDER
+/*---------------------------------------------------------------------*/
+span.divider {
+  display: block;
+  margin: 35px 0px;
+  width: 150px;
+  height: 2px;
+  background-color: #DDD;
+}
+
+span.divider.center {
+  margin-right: auto;
+  margin-left: auto;
+}
+
+
+h4.contact-details {
+	margin-bottom: 15px;
+    font-size: 18px;
+    text-transform: uppercase;
+}
+
+ul.contact-details > li {
+	padding: 2px 0px;
+    font-size: 16px;
+}
+
+div.contact-details {
+	margin-top: 30px;
+}
+
+#profile .profile-text h2 {
+    text-transform: uppercase;
+}
+
+.section-title {
+    margin-bottom: 20px;
+    font-size: 35px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
