@@ -9,11 +9,12 @@
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>Bare - Start Bootstrap Template</title>
+    <title>Useful Links | Adonis Bogris</title>
 
     <!-- Bootstrap Core CSS -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
 	<link rel="stylesheet" href="css\font-awesome-4.5.0\css\font-awesome.min.css">
+	<link href="css/style.css" rel="stylesheet">
 
     <!-- Custom CSS -->
     <style>
@@ -36,28 +37,28 @@
 
     <!-- Navigation -->
     <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
-        <div class="container">
-            <!-- Brand and toggle get grouped for better mobile display -->
-            <div class="navbar-header">
-                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
-                    <span class="sr-only">Toggle navigation</span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                </button>
-                <a class="navbar-brand" href="index.html"><i class="fa fa-university"></i> Home</a>
-            </div>
-            <!-- Collect the nav links, forms, and other content for toggling -->
-            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-                <ul class="nav navbar-nav">
-                    <li>
-                        <a href="cv.html"><i class="fa fa-user"></i> CV</a>
-                    </li>
-                    <li>
-                        <a href="teaching.html"><i class="fa fa-graduation-cap"></i> Teaching</a>
-                    </li>
-					  <li class="dropdown">
-						<a class="dropdown-toggle" data-toggle="dropdown" href="#"><i class="fa fa-book"></i> Research
+	    <div class="container">
+			<!-- Brand and toggle get grouped for better mobile display -->
+			<div class="navbar-header">
+			    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+			        <span class="sr-only">Toggle navigation</span>
+			        <span class="icon-bar"></span>
+			        <span class="icon-bar"></span>
+			        <span class="icon-bar"></span>
+			    </button>
+			    <a class="navbar-brand" href="index.html"><i class="fa fa-university"></i> Home</a>
+			</div>
+			<!-- Collect the nav links, forms, and other content for toggling -->
+			<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+			    <ul class="nav navbar-nav">
+			        <li>
+			            <a href="cv.html"><i class="fa fa-user"></i> CV</a>
+			        </li>
+			        <li>
+			            <a href="teaching.html"><i class="fa fa-graduation-cap"></i> Teaching</a>
+			        </li>
+					  <li class="dropdown research">
+						<a class="dropdown-toggle disabled" data-toggle="dropdown" href="research.html"><i class="fa fa-book"></i> Research
 						<span class="caret"></span></a>
 						<ul class="dropdown-menu">
 						  <li><a href="publications.html">Publications</a></li>
@@ -65,26 +66,27 @@
 						</ul>
 					  </li>
 					<li class="active">
-                        <a href="useful-links.html">Useful Links</a>
-                    </li>
-                </ul>
-            </div>
-            <!-- /.navbar-collapse -->
-        </div>
-        <!-- /.container -->
+			            <a href="useful-links.html"><i class="fa fa-info-circle"></i> Useful Links</a>
+			        </li>
+			    </ul>
+			</div>
+			<!-- /.navbar-collapse -->
+	    </div>
     </nav>
 
     <!-- Page Content -->
-    <div class="container">
+    <div class="container my-container">
 
         <div class="row">
-            <div class="col-lg-12 text-center">
-                <h1>A Bootstrap Starter Template</h1>
-                <p class="lead">Complete with pre-defined file paths that you won't have to change!</p>
-                <ul class="list-unstyled">
-                    <li>Bootstrap v3.3.6</li>
-                    <li>jQuery v1.11.1</li>
-                </ul>
+            <div class="col-lg-12">
+                <h1 class="section-title"><i class="fa fa-info-circle"></i> Useful  Links</h1>
+				
+				<p class="lead">Here you can find a bunch of links related to the research groups I am working with.</p>
+				<ul>
+					<li><a href="http://pdsn.stef.teiath.gr/" target="_blank">Parallel and Distributed Systems and Networks Lab</a></li>
+					<li><a href="http://optcomm2.di.uoa.gr/" target="_blank">Optical communications & Photonics Laboratory</a></li>
+					<li><a href="http://galaxy.hua.gr/~thkam/lab.html" target="_blank">Photons@HUA</a></li>
+				</ul>
             </div>
         </div>
         <!-- /.row -->
@@ -96,7 +98,8 @@
     <script src="js/jquery.js"></script>
 
     <!-- Bootstrap Core JavaScript -->
-    <script src="js/bootstrap.min.js"></script>
+    <script src="js/bootstrap.min.js"></script
+	<script src="js/hover.js"></script>
 
 </body>
 
